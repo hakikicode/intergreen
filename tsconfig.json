@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",              // Allows for ES module syntax
+    "target": "ES6",                 // Sets ECMAScript target version
+    "lib": ["DOM", "ES6"],           // Includes DOM and ES6 libraries
+    "allowJs": true,                 // Allows JavaScript files to be compiled
+    "jsx": "react",                  // Sets JSX syntax support to React
+    "moduleResolution": "node",      // Uses Node.js-style module resolution
+    "esModuleInterop": true,         // Enables interoperability between CommonJS and ES modules
+    "skipLibCheck": true,            // Skips type checks on declaration files
+    "forceConsistentCasingInFileNames": true,  // Enforces consistent file name casing
+    "strict": true,                  // Enables all strict type-checking options
+    "baseUrl": "./",                 // Sets the base directory for module resolution
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]  // Maps module imports
+    }
+  },
+  "include": ["src"],                // Specifies files to include in the compilation
+  "exclude": ["node_modules", "build", "dist"] // Excludes unnecessary directories
+}
